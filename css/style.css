@@ -17,8 +17,8 @@ body {
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 4rem;
-  width: 4rem;
+  height: var(--avatar-size);
+  width: var(--avatar-size);
   border-radius: 50%;
   border: 2px groove white;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
@@ -33,6 +33,7 @@ body {
 }
 
 .container {
+  --avatar-size: 7rem;
   margin: 10vh auto;
   width: 75%;
   max-width: 30em;
@@ -42,7 +43,7 @@ body {
 }
 
 .container header {
-  margin-top: 2rem;
+  margin-top: calc( var(--avatar-size) / 2 );
   text-align: center;
 }
 
